@@ -169,6 +169,7 @@ return [
          */
         Yajra\DataTables\DataTablesServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        'JD\Cloudder\CloudderServiceProvider',
 
         /*
          * Application Service Providers...
@@ -230,6 +231,7 @@ return [
 
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'Cloudder' => 'JD\Cloudder\Facades\Cloudder',
     ],
 
 ];
