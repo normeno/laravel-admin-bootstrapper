@@ -171,6 +171,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         'JD\Cloudder\CloudderServiceProvider',
         Maatwebsite\Excel\ExcelServiceProvider::class,
+        Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -234,6 +235,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Cloudder' => 'JD\Cloudder\Facades\Cloudder',
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+        'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
     ],
 
 ];
