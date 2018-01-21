@@ -172,6 +172,7 @@ return [
         'JD\Cloudder\CloudderServiceProvider',
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
+        Laraveles\Spanish\SpanishServiceProvider::class,
 
         /*
          * Application Service Providers...
