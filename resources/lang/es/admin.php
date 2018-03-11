@@ -1,6 +1,7 @@
 <?php
 return [
     'users' => 'Usuario|Usuarios',
+    'admin_of' => 'Administración de :name',
     'list_of' => 'Listado de :name',
     'creation_of' => 'Creación de :name',
     'edit' => 'Editar',
@@ -15,10 +16,15 @@ return [
     'confirm_password' => 'Confirmar Contraseña',
     'actions' => 'Acciones',
     'created_at' => 'Fecha de Creación',
-    'create' => 'Create',
+    'create' => 'Crear',
     'massive_creation' => 'Creación Masiva',
     'sign_in_to_start' => 'Ingresa tus credenciales para acceder',
     'remember_me' => 'Recordarme',
     'sign_in_login' => 'Ingresar',
-    'forgot_password' => 'He olvidado mi contraseña'
+    'forgot_password' => 'He olvidado mi contraseña',
+    'no_name' => 'Sin Nombre',
+    'since' => 'Desde',
+    'dashboard' => 'Dashboard',
+    'roles' => 'Rol|Roles',
+    'list' => 'Lista'
 ];

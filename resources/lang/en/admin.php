@@ -2,6 +2,7 @@
 
 return [
     'users' => 'User|Users',
+    'admin_of' => ':name\'s administration',
     'list_of' => 'List of :name',
     'creation_of' => ':name\'s creation',
     'edit' => 'Edit',
@@ -21,5 +22,10 @@ return [
     'sign_in_to_start' => 'enter your credentials to access',
     'remember_me' => 'Remember Me',
     'sign_in_login' => 'Sign In',
-    'forgot_password' => 'Forgot Passowrd'
+    'forgot_password' => 'Forgot Password',
+    'no_name' => 'No Name',
+    'since' => 'Since',
+    'dashboard' => 'Dashboard',
+    'roles' => 'Role|Roles',
+    'list' => 'List'
 ];
