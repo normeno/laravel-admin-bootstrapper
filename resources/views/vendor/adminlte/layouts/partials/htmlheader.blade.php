@@ -25,6 +25,8 @@
                 $trans[$filename] = trans($filename);
             }
             $trans['adminlte_lang_message'] = trans('adminlte_lang::message');
+            $trans['admin'] = trans('admin');
+
             echo json_encode($trans);
         @endphp
     </script>
