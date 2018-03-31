@@ -7,7 +7,7 @@ return [
     'edit' => 'Editar',
     'delete' => 'Eliminar',
     'idenfier' => 'Identificador',
-    'identifier_ph' => 'Eg. DNI, Passport',
+    'identifier_ph' => 'Ej. DNI, Pasaporte',
     'avatar' => 'Avatar',
     'name' => 'Nombre',
     'username' => 'Nombre de Usuario',
