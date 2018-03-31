@@ -25574,6 +25574,19 @@ module.exports = function bind(fn, thisArg) {
 
 __webpack_require__(51);
 
+// preview avatar
+$(document).on('change', 'input[name=avatar]', function () {
+  if ($("input[name=avatar]").val()) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      $('#avatar-preview').attr('src', e.target.result);
+    };
+
+    reader.readAsDataURL($("input[name=avatar]")[0].files[0]);
+  }
+});
+
 window.Vue = __webpack_require__(8);
 
 /**

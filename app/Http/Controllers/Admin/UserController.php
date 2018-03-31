@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Requests\Admin\UserStore;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -34,12 +35,19 @@ class UserController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param UserStore $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserStore $request)
     {
-        //
+        User::create($request->all());
+
+        $request->session()->flash('msg-flash', [
+            'type' => 'success',
+            'text' => __('admin.success_create')
+        ]);
+
+        return redirect()->route('admin.user.index');
     }
 
     /**

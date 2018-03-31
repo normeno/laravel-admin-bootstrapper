@@ -1,3 +1,4 @@
+'use strict';
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -7,20 +8,18 @@
 
 require('./bootstrap');
 
-
 // preview avatar
 $(document).on('change', 'input[name=avatar]', function () {
   if ($("input[name=avatar]").val()) {
-    const reader = new FileReader();
+    var reader = new FileReader();
 
     reader.onload = function (e) {
       $('#avatar-preview').attr('src', e.target.result);
-    }
+    };
 
     reader.readAsDataURL($("input[name=avatar]")[0].files[0]);
   }
 });
-
 
 window.Vue = require('vue');
 
@@ -32,6 +31,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
-    el: '#app'
+var app = new Vue({
+  el: '#app'
 });
+//# sourceMappingURL=app.js.map
