@@ -35,3 +35,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+require('./jquery.dataTables.min');
+require('./dataTables.bootstrap.min')
+require('./datatables');
