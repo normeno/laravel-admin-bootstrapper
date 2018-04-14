@@ -7,6 +7,14 @@
 
 require('./bootstrap');
 
+$.ajaxSetup({
+  headers: {
+    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  }
+});
+
+import swal from 'sweetalert';
+
 // preview avatar
 $(document).on('change', 'input[name=avatar]', function () {
   if ($("input[name=avatar]").val()) {
@@ -36,5 +44,4 @@ const app = new Vue({
 });
 
 require('./jquery.dataTables.min');
-requi
 require('./datatables');

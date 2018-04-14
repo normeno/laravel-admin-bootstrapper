@@ -23,12 +23,24 @@ $(function() {
     $(document).on('click', '.btn-danger', function (e) {
         e.preventDefault();
 
-        $.ajax({
-            url: $(this).prop('href'),
-            type: 'DELETE',
-            data: {_token: window.Laravel.csrfToken}
-        }).done(function () {
-            location.reload();
+      swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will not be able to recover this user",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+        .then((willDelete) => {
+          if (willDelete) {
+            $.ajax({
+              url: $(this).prop('href'),
+              type: 'DELETE',
+            }).done(function () {
+              location.reload();
+            });
+          } else {
+            swal("Error deleting user");
+          }
         });
     });
 });
