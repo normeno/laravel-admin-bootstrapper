@@ -7,7 +7,6 @@
 
 require('./bootstrap');
 
-
 // preview avatar
 $(document).on('change', 'input[name=avatar]', function () {
   if ($("input[name=avatar]").val()) {
@@ -37,5 +36,5 @@ const app = new Vue({
 });
 
 require('./jquery.dataTables.min');
-require('./dataTables.bootstrap.min')
+requi
 require('./datatables');

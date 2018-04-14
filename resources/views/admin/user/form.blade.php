@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="col-md-6">
-        <img id="avatar-preview" src="{{ asset('/img/avatar.png') }}" alt="{{ __('admin.avatar') }}" width="150" />
+        <img id="avatar-preview" src="{{ ($user->avatar) ? $user->avatar : asset('/img/avatar.png') }}" alt="{{ __('admin.avatar') }}" width="150" />
     </div>
 </div>
 
