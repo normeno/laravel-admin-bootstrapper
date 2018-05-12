@@ -16,7 +16,11 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'admin', /*'middleware' => 'auth'*/], function () {
+    require_once 'admin/DashboardRoutes.php';
     require_once 'admin/UserRoutes.php';
+    require_once 'admin/RoleRoutes.php';
+    require_once 'admin/PermissionRoutes.php';
+    require_once 'admin/PermissionRoleRoutes.php';
 });
 
 Route::group(['middleware' => 'auth'], function () {

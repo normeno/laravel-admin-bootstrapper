@@ -50,8 +50,9 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#">{{ trans_choice('admin.users', 10) }}</a></li>
-                    <li><a href="#">{{ trans_choice('admin.roles', 10) }}</a></li>
+                    <li><a href="{{ route('admin.users.index') }}">{{ trans_choice('admin.users', 10) }}</a></li>
+                    <li><a href="{{ route('admin.roles.index') }}">{{ trans_choice('admin.roles', 10) }}</a></li>
+                    <li><a href="{{ route('admin.permissions.index') }}">{{ trans_choice('admin.permissions', 10) }}</a></li>
                 </ul>
             </li>
 

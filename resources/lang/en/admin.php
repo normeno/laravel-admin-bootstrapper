@@ -5,6 +5,7 @@ return [
     'admin_of' => ':name\'s administration',
     'list_of' => 'List of :name',
     'creation_of' => ':name\'s creation',
+    'update_of' => ':name\'s update',
     'edit' => 'Edit',
     'delete' => 'Delete',
     'idenfier' => 'Identifier',
@@ -27,5 +28,9 @@ return [
     'since' => 'Since',
     'dashboard' => 'Dashboard',
     'roles' => 'Role|Roles',
-    'list' => 'List'
+    'list' => 'List',
+    'update' => 'Update',
+    'permissions' => 'Permission|Permissions',
+    'permission_roles' => 'Role permissions',
+    'save' => 'Save'
 ];

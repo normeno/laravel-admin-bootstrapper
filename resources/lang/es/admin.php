@@ -4,6 +4,7 @@ return [
     'admin_of' => 'Administración de :name',
     'list_of' => 'Listado de :name',
     'creation_of' => 'Creación de :name',
+    'update_of' => 'Modificación de :name',
     'edit' => 'Editar',
     'delete' => 'Eliminar',
     'idenfier' => 'Identificador',
@@ -26,5 +27,9 @@ return [
     'since' => 'Desde',
     'dashboard' => 'Dashboard',
     'roles' => 'Rol|Roles',
-    'list' => 'Lista'
+    'list' => 'Lista',
+    'update' => 'Actualizar',
+    'permissions' => 'Permiso|Permisos',
+    'permission_roles' => 'Permisos de roles',
+    'save' => 'Guardar'
 ];
