@@ -45,4 +45,4 @@ const app = new Vue({
 
 require('./jquery.dataTables.min');
 require('./datatables');
-require('../../../vendor/khill/lavacharts/javascript/lava');
+//require('../../../vendor/khill/lavacharts/javascript/lava');
