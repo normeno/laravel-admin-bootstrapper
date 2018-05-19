@@ -32,5 +32,6 @@ return [
     'permissions' => 'Permiso|Permisos',
     'permission_roles' => 'Permisos de roles',
     'save' => 'Guardar',
-    'success_update' => 'Éxito al actualizar registro'
+    'success_update' => 'Éxito al actualizar registro',
+    'role_users' => 'Roles de Usuarios'
 ];
