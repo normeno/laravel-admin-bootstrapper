@@ -42,8 +42,8 @@ $(function() {
     e.preventDefault();
 
     swal({
-      title: "Are you sure?",
-      text: "Once deleted, you will not be able to recover this user",
+      title: "¿Estás seguro?",
+      text: "Una vez eliminado, no podrás recuperar el registro",
       icon: "warning",
       buttons: true,
       dangerMode: true,
@@ -57,7 +57,7 @@ $(function() {
             location.reload();
           });
         } else {
-          swal("Error deleting user");
+          swal("No se ha eliminado el registro");
         }
       });
   });
