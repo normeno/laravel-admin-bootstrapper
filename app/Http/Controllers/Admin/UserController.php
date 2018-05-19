@@ -6,6 +6,7 @@ use App\Http\Requests\Admin\UserStore;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Spatie\Permission\Models\Role;
 use Yajra\DataTables\DataTables;
 
 class UserController extends Controller
@@ -100,9 +101,15 @@ class UserController extends Controller
     public function table()
     {
         $users = User::select(['id', 'avatar', 'name', 'username', 'email', 'created_at']);
+        $roles = Role::all();
 
         return Datatables::of($users)
             ->addColumn('action', function ($user) {
+                $roles = '<a href="' . route("admin.users.index", ["user" => $user->id]) . '" 
+                                class="btn btn-xs btn-warning">
+                                    <i class="glyphicon glyphicon-lock"></i> '.trans_choice("admin.roles", 10).'
+                            </a>';
+
                 $edit =   '<a href="' . route("admin.users.edit", ["id" => $user->id]) . '" 
                                 class="btn btn-xs btn-info">
                                     <i class="glyphicon glyphicon-pushpin"></i> '.trans("admin.edit").'
@@ -113,7 +120,7 @@ class UserController extends Controller
                                     <i class="glyphicon glyphicon-pushpin"></i> '.trans("admin.delete").'
                             </a>';
 
-                return "{$edit} {$delete}";
+                return "$roles $edit $delete";
             })
             ->removeColumn('id')
             ->make(true);

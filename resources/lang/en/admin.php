@@ -32,5 +32,6 @@ return [
     'update' => 'Update',
     'permissions' => 'Permission|Permissions',
     'permission_roles' => 'Role permissions',
-    'save' => 'Save'
+    'save' => 'Save',
+    'success_update' => 'Success updating record'
 ];

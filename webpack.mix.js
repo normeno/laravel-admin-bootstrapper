@@ -25,6 +25,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
      'public/css/toastr.css',
      'resources/assets/css/jquery.dataTables.min.css',
      'resources/assets/css/dataTables.bootstrap.min.css',
+     'resources/assets/css/growl-alert.css'
    ], 'public/css/all.css')
    //APP RESOURCES
    .copyDirectory('resources/assets/img','public/img')

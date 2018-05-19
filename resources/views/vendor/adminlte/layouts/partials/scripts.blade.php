@@ -4,8 +4,16 @@
 <!-- Laravel App -->
 <script src="{{ url (mix('/js/app.js')) }}" type="text/javascript"></script>
 
-<!-- Optionally, you can add Slimscroll and FastClick plugins.
-      Both of these plugins are recommended to enhance the
-      user experience. Slimscroll is required when using the
-      fixed layout. -->
+<script src="https://unpkg.com/growl-alert"></script>
+@if (Session::has('msg-flash'))
+    <script>
+      growl({
+        type: '{!! session('msg-flash')['type'] !!}',
+        text: '{!! session('msg-flash')['text'] !!}',
+        fadeAway: true,
+        fadeAwayTimeout: 5000,
+      });
+    </script>
+@endif
+
 @stack('scripts')

@@ -31,5 +31,6 @@ return [
     'update' => 'Actualizar',
     'permissions' => 'Permiso|Permisos',
     'permission_roles' => 'Permisos de roles',
-    'save' => 'Guardar'
+    'save' => 'Guardar',
+    'success_update' => 'Éxito al actualizar registro'
 ];
