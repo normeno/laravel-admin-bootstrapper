@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Auth\LoginController@showLoginForm');
 
 Route::group(['prefix' => 'admin', /*'middleware' => 'auth'*/], function () {
     require_once 'admin/DashboardRoutes.php';
